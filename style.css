@@ -1,0 +1,89 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    width: 250px;
+    background-color: #87CEFA;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 10px;
+}
+
+.display {
+    background-color: #ADD8E6;
+    padding: 10px;
+    text-align: right;
+    position: relative;
+}
+
+.brand {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size: 14px;
+    color: #87CEFA;
+}
+
+.menu {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 18px;
+    color: #87CEFA;
+}
+
+input[type="text"] {
+    width: 100%;
+    border: none;
+    font-size: 36px;
+    color: #4682B4;
+    background: none;
+    text-align: right;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+button {
+    background-color: #4682B4;
+    border: none;
+    padding: 20px;
+    font-size: 18px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+button:active {
+    background-color: #6CA6CD;
+}
+
+.change-bg {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4682B4;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+}
+
+.change-bg:active {
+    background-color: #4169E1;
+}
