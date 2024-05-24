@@ -5,12 +5,19 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f0f0f0;
+    background-color: #252121;
     font-family: Arial, sans-serif;
 }
 
+.heading {
+    margin: 0;
+    font-size: 36px;
+    text-align: center;
+    color: #ffffff;
+}
+
 .calculator {
-    width: 250px;
+    width: 350px;
     background-color: #87CEFA;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -19,7 +26,7 @@ body {
 }
 
 .display {
-    background-color: #ADD8E6;
+    background-color: #fefdfd;
     padding: 10px;
     text-align: right;
     position: relative;
@@ -44,10 +51,10 @@ body {
 input[type="text"] {
     width: 100%;
     border: none;
-    font-size: 36px;
-    color: #4682B4;
+    font-size: 25px;
+    color: black;
     background: none;
-    text-align: right;
+    text-align: left;
 }
 
 .buttons {
@@ -62,7 +69,7 @@ button {
     border: none;
     padding: 20px;
     font-size: 18px;
-    color: white;
+    color: rgb(10, 10, 10);
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.5s;
@@ -86,4 +93,18 @@ button:active {
 
 .change-bg:active {
     background-color: #4169E1;
+}
+.theme-buttons {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.theme-button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
 }
