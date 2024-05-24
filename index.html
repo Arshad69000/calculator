@@ -7,10 +7,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1 class="heading">Calculator</h1>
     <div class="calculator" id="calculator">
         <div class="display">
-            <div class="brand">CALCI</div>
-            <div class="menu">⋮</div>
             <input type="text" id="result" readonly>
         </div>
         <div class="buttons">
@@ -35,8 +34,8 @@
             <button onclick="calculateResult()">=</button>
         </div>
     </div>
-    <button class="change-bg" onclick="changeBackground()">Change Background</button>
-
+    <button class="change-bg" onclick="toggleThemeButtons()">Change Background</button>
+    <div class="theme-buttons" id="theme-buttons" style="display: none;"></div>
     <script src="main.js"></script>
 </body>
 </html>
