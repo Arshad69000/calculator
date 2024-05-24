@@ -49,7 +49,7 @@ function calculateResult() {
         }
 
         // Check for invalid syntax (operators at the end, consecutive operators, etc.)
-        if (/[^+\-*/%]$/.test(result)) {
+        if (/[\+\-*/%]$/.test(result)) {
             throw new Error('Missing value');
         }
         if (/[\+\-*/%]{2,}/.test(result)) {
